@@ -1,0 +1,59 @@
+@import "compass";
+@import "compass/reset";
+
+@import "utils";
+
+html {
+	min-height: 100%;
+	background: url("../img/monni.jpg") center right no-repeat;
+
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#page-wrap {
+	width: 960px;
+	margin: 20px auto;
+}
+
+.main-header {
+	margin: 0 0 20px 0;
+
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.task {
+	display: block;
+	width: 450px;
+	margin-bottom: 1px;
+
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+
+	@extend .clearfix;
+}
+
+.task:last-child {
+	border: 0;
+}
+
+.task-name,
+.task-effort {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 5px;
+
+	border: 0;
+
+	font-size: 18px;
+}
+
+.task-handle {
+	display: block;
+	float: left;
+	margin-right: 5px;
+
+	text-decoration: none;
+	color: #333333;
+	line-height: 30px;
+}
